@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message to Nasir!</title>
+  <link rel="stylesheet" href="/assets/css/form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Contact Us</h1>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+<body class="imgg">
+  <a  class="back-button" href="/index.html"> Back to Portfolio</a>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="button" onclick="validateForm()">Submit</button>
-            <p id="confirmation-message"></p>
-        </form>
-    </div>
-    <script src="script.js"></script>
+  
+  
+  <div class="container formm">
+    <h1 class="h1">GET IN TOUCH</h1>
+    <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="e5284c8b-48a8-46e0-b8a5-f6880ad11616">
+      <input class="formmm" type="text" name="name" placeholder="Your Name" required>
+      <input class="formmm" type="email" name="email" placeholder="Your Email" required>
+      <textarea class="formmm" name="message" placeholder="Your Message" required></textarea>
+      <!-- <div class="h-captcha" data-captcha="true"></div> -->
+      <button type="submit">Submit Form</button>
+    </form>
+  </div>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <script src="form.js"></script>
 </body>
 </html>
-
